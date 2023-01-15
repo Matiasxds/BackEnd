@@ -58,7 +58,7 @@ public class CHys {
             return new ResponseEntity(new Mensaje("no existe"), HttpStatus.NOT_FOUND);
         }
         shys.delete(id);
-        return new ResponseEntity(new Mensaje("Skill eliminado"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("habilidad eliminada"), HttpStatus.OK);
     }
 
     @PostMapping("/create")
@@ -67,13 +67,13 @@ public class CHys {
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         }
         if (shys.existsByNombre(dtohys.getNombre())) {
-            return new ResponseEntity(new Mensaje("Esa skill ya existe"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity(new Mensaje("Esa habilidad ya existe"), HttpStatus.BAD_REQUEST);
         }
 
         hys hYs = new hys(dtohys.getNombre(), dtohys.getPorcentaje());
         shys.save(hYs);
 
-        return new ResponseEntity(new Mensaje("Skill agregada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("habilidad agregada"), HttpStatus.OK);
     }
 
     @PutMapping("/update/{id}")
@@ -85,7 +85,7 @@ public class CHys {
         //Compara nombre de skills
         if (shys.existsByNombre(dtohys.getNombre()) && shys.getByNombre(dtohys.getNombre()).get()
                 .getId() != id) {
-            return new ResponseEntity(new Mensaje("Esa skill ya existe"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity(new Mensaje("Esa habilidad ya existe"), HttpStatus.BAD_REQUEST);
         }
         //No puede estar vacio
         if (StringUtils.isBlank(dtohys.getNombre())) {
@@ -97,7 +97,7 @@ public class CHys {
         hYs.setPorcentaje(dtohys.getPorcentaje());
 
         shys.save(hYs);
-        return new ResponseEntity(new Mensaje("Skill actualizada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("habilidad actualizada"), HttpStatus.OK);
 
     }
 }

@@ -34,8 +34,8 @@ public class Shys {
         return rhys.findByNombre(nombre);
     }
     
-    public void save(hys skill){
-        rhys.save(skill);
+    public void save(hys habilidad){
+        rhys.save(habilidad);
     }
     
     public void delete(int id){
