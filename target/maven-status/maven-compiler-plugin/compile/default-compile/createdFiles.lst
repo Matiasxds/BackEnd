@@ -17,7 +17,6 @@ com\Portafolio\Matias\Dto\DtoExperiencia.class
 com\Portafolio\Matias\Seguridad\Dto\JwtDto.class
 com\Portafolio\Matias\Entidad\Educacion.class
 com\Portafolio\Matias\Seguridad\MainSecurity.class
-com\Portafolio\Matias\Interface\IPersonaServicio.class
 com\Portafolio\Matias\Servicio\ServEducacion.class
 com\Portafolio\Matias\Entidad\Experiencia.class
 com\Portafolio\Matias\Repositorio\ExperienciaRepo.class
@@ -32,6 +31,7 @@ com\Portafolio\Matias\Dto\DtoEducacion.class
 com\Portafolio\Matias\Entidad\hys.class
 com\Portafolio\Matias\Entidad\Persona.class
 com\Portafolio\Matias\Seguridad\Controlador\Mensaje.class
+com\Portafolio\Matias\Dto\dtoPersona.class
 com\Portafolio\Matias\Seguridad\jwt\JwtTokenFilter.class
 com\Portafolio\Matias\Repositorio\IPersonaRepositorio.class
 com\Portafolio\Matias\Seguridad\entidad\Usuario.class

@@ -21,11 +21,11 @@ C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Controlador\
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Repositorio\ExperienciaRepo.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Seguridad\Dto\LoginUsuario.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Seguridad\Dto\NuevoUsuario.java
-C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Interface\IPersonaServicio.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Servicio\ImpPersonaServicio.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Controlador\CHys.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Entidad\Experiencia.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Seguridad\Controlador\AuthController.java
+C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Dto\dtoPersona.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Seguridad\Dto\JwtDto.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Dto\dtoHys.java
 C:\Users\Matias\Desktop\BackEnd\src\main\java\com\Portafolio\Matias\Seguridad\jwt\JwtTokenFilter.java

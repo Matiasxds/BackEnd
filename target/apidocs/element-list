@@ -2,7 +2,6 @@ com.Portafolio.Matias
 com.Portafolio.Matias.Controlador
 com.Portafolio.Matias.Dto
 com.Portafolio.Matias.Entidad
-com.Portafolio.Matias.Interface
 com.Portafolio.Matias.Repositorio
 com.Portafolio.Matias.Seguridad
 com.Portafolio.Matias.Seguridad.Controlador

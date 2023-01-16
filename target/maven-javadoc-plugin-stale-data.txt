@@ -30,7 +30,6 @@
 com.Portafolio.Matias.Controlador
 com.Portafolio.Matias.Dto
 com.Portafolio.Matias.Entidad
-com.Portafolio.Matias.Interface
 com.Portafolio.Matias
 com.Portafolio.Matias.Repositorio
 com.Portafolio.Matias.Seguridad.Controlador
@@ -49,11 +48,11 @@ com.Portafolio.Matias.Servicio
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Dto/DtoEducacion.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Dto/DtoExperiencia.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Dto/dtoHys.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Dto/dtoPersona.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Entidad/Educacion.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Entidad/Experiencia.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Entidad/hys.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Entidad/Persona.java'
-'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Interface/IPersonaServicio.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/MatiasApplication.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Repositorio/ExperienciaRepo.java'
 'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Repositorio/IPersonaRepositorio.java'
@@ -150,25 +149,25 @@ C:\Users\Matias\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.
 C:\Users\Matias\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar = 1670788353807
 C:\Users\Matias\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar = 1670701568162
 C:\Users\Matias\Desktop\BackEnd\src\main\java = 1673691329329
-C:\Users\Matias\Desktop\BackEnd\target\generated-sources\annotations = 1673789052450
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\allclasses-index.html = 1673789073744
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\allpackages-index.html = 1673789073747
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\copy.svg = 1673789073792
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\element-list = 1673789073506
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\help-doc.html = 1673789073788
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\index-all.html = 1673789073776
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\index.html = 1673789073725
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\jquery-ui.overrides.css = 1673789073800
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\member-search-index.js = 1673789073750
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\module-search-index.js = 1673789073748
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\overview-summary.html = 1673789073780
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\overview-tree.html = 1673789073722
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\package-search-index.js = 1673789073749
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\script.js = 1673789073791
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\search-page.js = 1673789073795
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\search.html = 1673789073778
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\search.js = 1673789073794
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\serialized-form.html = 1673789073603
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\stylesheet.css = 1673789073790
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\tag-search-index.js = 1673789073751
-C:\Users\Matias\Desktop\BackEnd\target\apidocs\type-search-index.js = 1673789073749
+C:\Users\Matias\Desktop\BackEnd\target\generated-sources\annotations = 1673830099182
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\allclasses-index.html = 1673830110919
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\allpackages-index.html = 1673830110922
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\copy.svg = 1673830110973
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\element-list = 1673830110599
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\help-doc.html = 1673830110970
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\index-all.html = 1673830110956
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\index.html = 1673830110893
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\jquery-ui.overrides.css = 1673830110981
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\member-search-index.js = 1673830110926
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\module-search-index.js = 1673830110922
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\overview-summary.html = 1673830110960
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\overview-tree.html = 1673830110891
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\package-search-index.js = 1673830110924
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\script.js = 1673830110973
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\search-page.js = 1673830110976
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\search.html = 1673830110958
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\search.js = 1673830110974
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\serialized-form.html = 1673830110711
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\stylesheet.css = 1673830110972
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\tag-search-index.js = 1673830110927
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\type-search-index.js = 1673830110925
