@@ -1,0 +1,173 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.6.7/spring-boot-starter-data-jpa-2.6.7.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.6.7/spring-boot-starter-aop-2.6.7.jar;C:/Users/Matias/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.6.7/spring-boot-starter-jdbc-2.6.7.jar;C:/Users/Matias/.m2/repository/com/zaxxer/HikariCP/4.0.3/HikariCP-4.0.3.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-jdbc/5.3.19/spring-jdbc-5.3.19.jar;C:/Users/Matias/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar;C:/Users/Matias/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar;C:/Users/Matias/.m2/repository/org/hibernate/hibernate-core/5.6.8.Final/hibernate-core-5.6.8.Final.jar;C:/Users/Matias/.m2/repository/org/jboss/logging/jboss-logging/3.4.3.Final/jboss-logging-3.4.3.Final.jar;C:/Users/Matias/.m2/repository/net/bytebuddy/byte-buddy/1.11.22/byte-buddy-1.11.22.jar;C:/Users/Matias/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar;C:/Users/Matias/.m2/repository/org/jboss/jandex/2.4.2.Final/jandex-2.4.2.Final.jar;C:/Users/Matias/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar;C:/Users/Matias/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar;C:/Users/Matias/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.6/jaxb-runtime-2.3.6.jar;C:/Users/Matias/.m2/repository/org/glassfish/jaxb/txw2/2.3.6/txw2-2.3.6.jar;C:/Users/Matias/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.12/istack-commons-runtime-3.0.12.jar;C:/Users/Matias/.m2/repository/org/springframework/data/spring-data-jpa/2.6.4/spring-data-jpa-2.6.4.jar;C:/Users/Matias/.m2/repository/org/springframework/data/spring-data-commons/2.6.4/spring-data-commons-2.6.4.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-orm/5.3.19/spring-orm-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-context/5.3.19/spring-context-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-tx/5.3.19/spring-tx-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-beans/5.3.19/spring-beans-5.3.19.jar;C:/Users/Matias/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-aspects/5.3.19/spring-aspects-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.6.7/spring-boot-starter-validation-2.6.7.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter/2.6.7/spring-boot-starter-2.6.7.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.6.7/spring-boot-starter-logging-2.6.7.jar;C:/Users/Matias/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar;C:/Users/Matias/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar;C:/Users/Matias/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar;C:/Users/Matias/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar;C:/Users/Matias/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar;C:/Users/Matias/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar;C:/Users/Matias/.m2/repository/org/yaml/snakeyaml/1.29/snakeyaml-1.29.jar;C:/Users/Matias/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.62/tomcat-embed-el-9.0.62.jar;C:/Users/Matias/.m2/repository/org/hibernate/validator/hibernate-validator/6.2.3.Final/hibernate-validator-6.2.3.Final.jar;C:/Users/Matias/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.6.7/spring-boot-starter-web-2.6.7.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.6.7/spring-boot-starter-json-2.6.7.jar;C:/Users/Matias/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.2/jackson-datatype-jdk8-2.13.2.jar;C:/Users/Matias/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.2/jackson-datatype-jsr310-2.13.2.jar;C:/Users/Matias/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.2/jackson-module-parameter-names-2.13.2.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.6.7/spring-boot-starter-tomcat-2.6.7.jar;C:/Users/Matias/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.62/tomcat-embed-core-9.0.62.jar;C:/Users/Matias/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.62/tomcat-embed-websocket-9.0.62.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-web/5.3.19/spring-web-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-webmvc/5.3.19/spring-webmvc-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-expression/5.3.19/spring-expression-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot/2.6.7/spring-boot-2.6.7.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.6.7/spring-boot-autoconfigure-2.6.7.jar;C:/Users/Matias/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar;C:/Users/Matias/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar;C:/Users/Matias/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-core/5.3.19/spring-core-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-jcl/5.3.19/spring-jcl-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/boot/spring-boot-starter-security/2.6.7/spring-boot-starter-security-2.6.7.jar;C:/Users/Matias/.m2/repository/org/springframework/spring-aop/5.3.19/spring-aop-5.3.19.jar;C:/Users/Matias/.m2/repository/org/springframework/security/spring-security-config/5.6.3/spring-security-config-5.6.3.jar;C:/Users/Matias/.m2/repository/org/springframework/security/spring-security-core/5.6.3/spring-security-core-5.6.3.jar;C:/Users/Matias/.m2/repository/org/springframework/security/spring-security-crypto/5.6.3/spring-security-crypto-5.6.3.jar;C:/Users/Matias/.m2/repository/org/springframework/security/spring-security-web/5.6.3/spring-security-web-5.6.3.jar;C:/Users/Matias/.m2/repository/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar;C:/Users/Matias/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.2.1/jackson-databind-2.13.2.1.jar;C:/Users/Matias/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.2/jackson-annotations-2.13.2.jar;C:/Users/Matias/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.2/jackson-core-2.13.2.jar;C:/Users/Matias/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/Users/Matias/Desktop/BackEnd/src/main/java;C:/Users/Matias/Desktop/BackEnd/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Matias/Desktop/BackEnd/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Matias 0.0.1-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/Matias/Desktop/BackEnd/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Matias 0.0.1-SNAPSHOT API'
+com.Portafolio.Matias.Controlador
+com.Portafolio.Matias.Dto
+com.Portafolio.Matias.Entidad
+com.Portafolio.Matias
+com.Portafolio.Matias.Repositorio
+com.Portafolio.Matias.Seguridad.Controlador
+com.Portafolio.Matias.Seguridad.Dto
+com.Portafolio.Matias.Seguridad.entidad
+com.Portafolio.Matias.Seguridad.Enums
+com.Portafolio.Matias.Seguridad.jwt
+com.Portafolio.Matias.Seguridad
+com.Portafolio.Matias.Seguridad.Repositorio
+com.Portafolio.Matias.Seguridad.Servicio
+com.Portafolio.Matias.Servicio
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Controlador/CHys.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Controlador/CoEducacion.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Controlador/CoExperiencia.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Controlador/PersonaControlador.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Dto/DtoEducacion.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Dto/DtoExperiencia.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Dto/dtoHys.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Dto/dtoPersona.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Entidad/Educacion.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Entidad/Experiencia.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Entidad/hys.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Entidad/Persona.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/MatiasApplication.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Repositorio/ExperienciaRepo.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Repositorio/IPersonaRepositorio.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Repositorio/RepoEducacion.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Repositorio/Rhys.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Controlador/AuthController.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Controlador/Mensaje.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Dto/JwtDto.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Dto/LoginUsuario.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Dto/NuevoUsuario.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/entidad/Rol.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/entidad/Usuario.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/entidad/UsuarioPrincipal.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Enums/RolNombre.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/jwt/JwtEntryPoint.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/jwt/JwtProvider.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/jwt/JwtTokenFilter.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/MainSecurity.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Repositorio/iRolRepositorio.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Repositorio/iUsuarioRepositorio.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Servicio/RolServicio.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Servicio/UserDetailsImpl.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Seguridad/Servicio/UsuarioServicio.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Servicio/ImpPersonaServicio.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Servicio/ServEducacion.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Servicio/ServExperiencia.java'
+'C:/Users/Matias/Desktop/BackEnd/src/main/java/com/Portafolio/Matias/Servicio/Shys.java'
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\2.6.7\spring-boot-starter-data-jpa-2.6.7.jar = 1670788242489
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-aop\2.6.7\spring-boot-starter-aop-2.6.7.jar = 1670788241187
+C:\Users\Matias\.m2\repository\org\aspectj\aspectjweaver\1.9.7\aspectjweaver-1.9.7.jar = 1668975470472
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\2.6.7\spring-boot-starter-jdbc-2.6.7.jar = 1670788241311
+C:\Users\Matias\.m2\repository\com\zaxxer\HikariCP\4.0.3\HikariCP-4.0.3.jar = 1668975440834
+C:\Users\Matias\.m2\repository\org\springframework\spring-jdbc\5.3.19\spring-jdbc-5.3.19.jar = 1670788245787
+C:\Users\Matias\.m2\repository\jakarta\transaction\jakarta.transaction-api\1.3.3\jakarta.transaction-api-1.3.3.jar = 1668975440746
+C:\Users\Matias\.m2\repository\jakarta\persistence\jakarta.persistence-api\2.2.3\jakarta.persistence-api-2.2.3.jar = 1668975442870
+C:\Users\Matias\.m2\repository\org\hibernate\hibernate-core\5.6.8.Final\hibernate-core-5.6.8.Final.jar = 1670788336910
+C:\Users\Matias\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar = 1668975443890
+C:\Users\Matias\.m2\repository\net\bytebuddy\byte-buddy\1.11.22\byte-buddy-1.11.22.jar = 1670788296101
+C:\Users\Matias\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar = 1668975454189
+C:\Users\Matias\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar = 1668975454432
+C:\Users\Matias\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar = 1668975455495
+C:\Users\Matias\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar = 1668975456041
+C:\Users\Matias\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.6\jaxb-runtime-2.3.6.jar = 1670701413715
+C:\Users\Matias\.m2\repository\org\glassfish\jaxb\txw2\2.3.6\txw2-2.3.6.jar = 1670701391986
+C:\Users\Matias\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.12\istack-commons-runtime-3.0.12.jar = 1668975458897
+C:\Users\Matias\.m2\repository\org\springframework\data\spring-data-jpa\2.6.4\spring-data-jpa-2.6.4.jar = 1670788247058
+C:\Users\Matias\.m2\repository\org\springframework\data\spring-data-commons\2.6.4\spring-data-commons-2.6.4.jar = 1670788253600
+C:\Users\Matias\.m2\repository\org\springframework\spring-orm\5.3.19\spring-orm-5.3.19.jar = 1670788250877
+C:\Users\Matias\.m2\repository\org\springframework\spring-context\5.3.19\spring-context-5.3.19.jar = 1670788263392
+C:\Users\Matias\.m2\repository\org\springframework\spring-tx\5.3.19\spring-tx-5.3.19.jar = 1670788255588
+C:\Users\Matias\.m2\repository\org\springframework\spring-beans\5.3.19\spring-beans-5.3.19.jar = 1670788260271
+C:\Users\Matias\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar = 1668975498880
+C:\Users\Matias\.m2\repository\org\springframework\spring-aspects\5.3.19\spring-aspects-5.3.19.jar = 1670788256443
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-validation\2.6.7\spring-boot-starter-validation-2.6.7.jar = 1670788256912
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter\2.6.7\spring-boot-starter-2.6.7.jar = 1670788257345
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.6.7\spring-boot-starter-logging-2.6.7.jar = 1670788257790
+C:\Users\Matias\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar = 1668975504624
+C:\Users\Matias\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar = 1668975504890
+C:\Users\Matias\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.17.2\log4j-to-slf4j-2.17.2.jar = 1668975504429
+C:\Users\Matias\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar = 1668975510729
+C:\Users\Matias\.m2\repository\org\slf4j\jul-to-slf4j\1.7.36\jul-to-slf4j-1.7.36.jar = 1668975505061
+C:\Users\Matias\.m2\repository\jakarta\annotation\jakarta.annotation-api\1.3.5\jakarta.annotation-api-1.3.5.jar = 1668975505643
+C:\Users\Matias\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar = 1670788262631
+C:\Users\Matias\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.62\tomcat-embed-el-9.0.62.jar = 1670788264409
+C:\Users\Matias\.m2\repository\org\hibernate\validator\hibernate-validator\6.2.3.Final\hibernate-validator-6.2.3.Final.jar = 1670788282852
+C:\Users\Matias\.m2\repository\jakarta\validation\jakarta.validation-api\2.0.2\jakarta.validation-api-2.0.2.jar = 1668975511248
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-web\2.6.7\spring-boot-starter-web-2.6.7.jar = 1670788263809
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-json\2.6.7\spring-boot-starter-json-2.6.7.jar = 1670788264212
+C:\Users\Matias\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.13.2\jackson-datatype-jdk8-2.13.2.jar = 1670788265198
+C:\Users\Matias\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.13.2\jackson-datatype-jsr310-2.13.2.jar = 1670788266147
+C:\Users\Matias\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.13.2\jackson-module-parameter-names-2.13.2.jar = 1670788265672
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\2.6.7\spring-boot-starter-tomcat-2.6.7.jar = 1670788266104
+C:\Users\Matias\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.62\tomcat-embed-core-9.0.62.jar = 1670788307851
+C:\Users\Matias\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.62\tomcat-embed-websocket-9.0.62.jar = 1670788269875
+C:\Users\Matias\.m2\repository\org\springframework\spring-web\5.3.19\spring-web-5.3.19.jar = 1670788291094
+C:\Users\Matias\.m2\repository\org\springframework\spring-webmvc\5.3.19\spring-webmvc-5.3.19.jar = 1670788298347
+C:\Users\Matias\.m2\repository\org\springframework\spring-expression\5.3.19\spring-expression-5.3.19.jar = 1670788296433
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot\2.6.7\spring-boot-2.6.7.jar = 1670788315832
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.6.7\spring-boot-autoconfigure-2.6.7.jar = 1670788318078
+C:\Users\Matias\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar = 1668975605256
+C:\Users\Matias\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar = 1668975587056
+C:\Users\Matias\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar = 1668975585628
+C:\Users\Matias\.m2\repository\org\springframework\spring-core\5.3.19\spring-core-5.3.19.jar = 1670788344009
+C:\Users\Matias\.m2\repository\org\springframework\spring-jcl\5.3.19\spring-jcl-5.3.19.jar = 1670788326228
+C:\Users\Matias\.m2\repository\org\springframework\boot\spring-boot-starter-security\2.6.7\spring-boot-starter-security-2.6.7.jar = 1670788337312
+C:\Users\Matias\.m2\repository\org\springframework\spring-aop\5.3.19\spring-aop-5.3.19.jar = 1670788342093
+C:\Users\Matias\.m2\repository\org\springframework\security\spring-security-config\5.6.3\spring-security-config-5.6.3.jar = 1670788359784
+C:\Users\Matias\.m2\repository\org\springframework\security\spring-security-core\5.6.3\spring-security-core-5.6.3.jar = 1670788346437
+C:\Users\Matias\.m2\repository\org\springframework\security\spring-security-crypto\5.6.3\spring-security-crypto-5.6.3.jar = 1670788343523
+C:\Users\Matias\.m2\repository\org\springframework\security\spring-security-web\5.6.3\spring-security-web-5.6.3.jar = 1670788352233
+C:\Users\Matias\.m2\repository\io\jsonwebtoken\jjwt\0.9.1\jjwt-0.9.1.jar = 1670201644764
+C:\Users\Matias\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.1\jackson-databind-2.13.2.1.jar = 1670788358713
+C:\Users\Matias\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar = 1670788348020
+C:\Users\Matias\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar = 1670788353807
+C:\Users\Matias\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar = 1670701568162
+C:\Users\Matias\Desktop\BackEnd\src\main\java = 1673691329329
+C:\Users\Matias\Desktop\BackEnd\target\generated-sources\annotations = 1673835645470
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\allclasses-index.html = 1673835667203
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\allpackages-index.html = 1673835667205
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\copy.svg = 1673835667254
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\element-list = 1673835666967
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\help-doc.html = 1673835667250
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\index-all.html = 1673835667229
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\index.html = 1673835667180
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\jquery-ui.overrides.css = 1673835667263
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\member-search-index.js = 1673835667209
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\module-search-index.js = 1673835667206
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\overview-summary.html = 1673835667229
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\overview-tree.html = 1673835667177
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\package-search-index.js = 1673835667207
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\script.js = 1673835667253
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\search-page.js = 1673835667257
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\search.html = 1673835667229
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\search.js = 1673835667256
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\serialized-form.html = 1673835667052
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\stylesheet.css = 1673835667252
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\tag-search-index.js = 1673835667209
+C:\Users\Matias\Desktop\BackEnd\target\apidocs\type-search-index.js = 1673835667208
