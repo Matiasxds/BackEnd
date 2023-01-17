@@ -2,6 +2,7 @@ com\Portafolio\Matias\Servicio\Shys.class
 com\Portafolio\Matias\MatiasApplication.class
 com\Portafolio\Matias\Seguridad\jwt\JwtEntryPoint.class
 com\Portafolio\Matias\Seguridad\Repositorio\iUsuarioRepositorio.class
+com\Portafolio\Matias\WebConfig.class
 com\Portafolio\Matias\Seguridad\Servicio\RolServicio.class
 com\Portafolio\Matias\Seguridad\entidad\UsuarioPrincipal.class
 com\Portafolio\Matias\Servicio\ServExperiencia.class
