@@ -16,6 +16,7 @@ import com.Portafolio.Matias.Servicio.ImpPersonaServicio;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -57,22 +58,12 @@ public class PersonaControlador {
         return new ResponseEntity(new Mensaje("Persona eliminada"), HttpStatus.OK);
     }
     
-    @PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona){
-        if(StringUtils.isBlank(dtopersona.getNombre())){
-            return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        }
-        if(personaServicio.existsByNombre(dtopersona.getNombre())){
-            return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
-        }
-        
-       Persona persona = new Persona(
-                dtopersona.getNombre(), dtopersona.getDescripcion()
-            );
+        @PreAuthorize("hasRole('ADMIN')")
+    @PostMapping("/Crear")
+    public void newPersona(@RequestBody Persona persona) {
         personaServicio.save(persona);
-        return new ResponseEntity(new Mensaje("Educacion creada"), HttpStatus.OK);
-                
-        }
+    }
+
     
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona){
