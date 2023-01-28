@@ -59,7 +59,7 @@ public class PersonaControlador {
     }
     
         @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/Crear")
+    @PostMapping("/create")
     public void newPersona(@RequestBody Persona persona) {
         personaServicio.save(persona);
     }

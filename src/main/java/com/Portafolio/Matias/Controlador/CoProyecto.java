@@ -64,7 +64,7 @@ public class CoProyecto {
     }
     
         @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/Crear")
+    @PostMapping("/create")
     public void newProyecto(@RequestBody Proyecto proyecto) {
         servProyecto.save(proyecto);
     }
