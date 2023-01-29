@@ -14,7 +14,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -63,12 +62,18 @@ public class CoProyecto {
         return new ResponseEntity(new Mensaje("Persona eliminada"), HttpStatus.OK);
     }
     
-        @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping("/create")
-    public void newProyecto(@RequestBody Proyecto proyecto) {
+   @PostMapping("/create")
+    public ResponseEntity<?> create(@RequestBody dtoProyecto dtoproyecto){      
+        if(StringUtils.isBlank(dtoproyecto.getNombre()))
+            return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
+        if(servProyecto.existsByNombre(dtoproyecto.getNombre()))
+            return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
+        
+        Proyecto proyecto = new Proyecto(dtoproyecto.getNombre(), dtoproyecto.getDescripcion(),dtoproyecto.getImg());
         servProyecto.save(proyecto);
+        
+        return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
     }
-
     
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoProyecto dtoproyecto){
